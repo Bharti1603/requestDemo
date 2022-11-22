@@ -1,0 +1,47 @@
+.form_wrapper{
+  width: 650px;
+    margin: auto;
+}
+
+
+
+select:invalid{
+  color: grey;
+}
+
+  .for_radius{
+    border-radius: 8px!important;
+  }
+
+  .newBgColor{
+    background-color: #0F3154!important;
+  }
+
+  .phone_content{
+    font-size: 12px;
+  }
+
+  .for_margin{
+    margin-left: 9rem!important;
+    color: #3B82F4!important
+  }
+
+  /* Media Query */
+
+  @media(max-width: 425px){
+    .for_margin{
+      margin-left: 7rem!important;
+    }
+  }
+
+  @media(max-width: 375px){
+    .for_margin{
+      margin-left: 5rem!important;
+    }
+  }
+
+  @media(max-width: 320px){
+    .for_margin{
+      margin-left: 3rem!important;
+    }
+  }

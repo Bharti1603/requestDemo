@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Demo Page</title>
+    <link rel="stylesheet" href="/form.css">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Start your free
+        trial</button>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <div class="modal-title fs-5 for_margin fw-bold" id="exampleModalLabel">Request A Demo</div>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <form action="" class="needs-validation" novalidate>
+                        <div class="form-group">
+
+                            <div class="row mb-4">
+                                <div class="col-md-6">
+                                    <label for="fName" class=" fw-bold">Name<span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control col-md-6 mt-3" placeholder="First name"
+                                        aria-label="First name" id="fName" required>
+                                    <div class="invalid-feedback">
+                                        Please enter your name
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="fName" class=" fw-bold"></label>
+                                    <input type="text" class="form-control col-md-6 mt-3" placeholder="Last name"
+                                        aria-label="Last name" id="fName" required>
+                                    <div class="invalid-feedback">
+                                        Please enter your name
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mb-4">
+                                <div class="col-md-12">
+                                    <label for="email" class=" fw-bold">Email <span class="text-danger">*</span>
+                                    </label>
+                                    <input type="email" class="form-control mt-3" aria-label="Last name"
+                                        placeholder="Enter Your Email" id="email" required>
+                                    <div class="invalid-feedback">
+                                        Please enter your email
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mb-4">
+                                <div class="col-md-5">
+                                    <label for="number" class=" fw-bold">Phone Number</label>
+                                    <select class="form-select mt-3" id="number">
+                                        <option class="text-muted" selected disabled value="Select A Country Code"
+                                            aria-placeholder="Select A Country Code"
+                                            aria-disabled="Select A Country Code"></option>
+                                        <option>+91</option>
+                                        <option>+92</option>
+                                        <option>+93</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-md-7">
+                                    <label for="number control-label" class=" fw-bold"></label>
+                                    <input type="number" class="form-control col-md-7 mt-3"
+                                        placeholder="Enter your phone number" id="number">
+                                    <div class="phone_content text-muted">
+                                        Please enter the phone number without plus sign ("+") and Country Code.
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="row mb-4">
+                                <div class="col-md-12">
+                                    <label for="comapnyName" class=" fw-bold">Company Name</label>
+                                    <input type="text" class="form-control mt-3" placeholder="Enter your company name"
+                                        id="comapnyName">
+                                    <div class="invalid-feedback">
+                                        Please enter your city
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="row mb-4">
+                                <div class="col-md-6">
+                                    <label for="validationDefault04" class="form-label col-md-4 fw-bold">Country<span
+                                            class="text-danger">*</span></label>
+                                    <select class="form-select mt-3" id="validationDefault04" required>
+                                        <option selected disabled value="">Select A Country</option>
+                                        <option>Option1</option>
+                                        <option>Option2</option>
+                                        <option>Option3</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Please Select Your Country
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="datetime-local" class="form-label col-md-8 fw-bold">Date and Time:<span
+                                            class="text-danger">*</span></label>
+
+                                    <input class="form-control mt-3" type="datetime-local" id="datetime-local"
+                                        name="datetime-local" value="" placeholder="Select A Date and Time" required>
+
+                                    <div class="invalid-feedback">
+                                        Please choose date and time
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="d-grid mb-4">
+                            <button class="btn newBgColor text-white" value="Sumbit" type="Submit">Submit</button>
+                        </div>
+
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+            integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+            crossorigin="anonymous"></script>
+
+        <script>
+            (() => {
+                'use strict'
+
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                const forms = document.querySelectorAll('.needs-validation')
+
+                // Loop over them and prevent submission
+                Array.from(forms).forEach(form => {
+                    form.addEventListener('submit', event => {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+            })()
+        </script>
+
+</body>
+
+</html>
