@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Demo Page</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+
+
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    
+      <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap-datetimepicker.css"> -->
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.43/css/bootstrap-datetimepicker.min.css"> 
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.43/css/bootstrap-datetimepicker-standalone.css"> 
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.43/js/bootstrap-datetimepicker.min.js"></script>
+      <link rel="stylesheet" href="/form.css">
+</head>
+
+<body>
+
+<section class="form_wrapper">
+  
+        <div class="row">
+            <div class="col-xl-10">
+              
+                <form action="" class="needs-validation" novalidate>
+                    <div class="form-group">
+
+                        <div class="row mb-4">
+                            <div class="col-md-6">
+                                <label for="fName" class=" fw-bold">Name<span class="text-danger">*</span></label>
+                                <input type="text" class="form-control col-md-6 mt-3" placeholder="First name"
+                                    aria-label="First name" id="fName" required>
+                                <div class="invalid-feedback">
+                                    Please enter your First Name
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="lName" class="fw-bold invisible">Name</label>
+                                <input type="text" class="form-control col-md-6 mt-3" placeholder="Last name"
+                                    aria-label="Last name" id="lName" required>
+                                <div class="invalid-feedback">
+                                    Please enter your Last Name
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col-md-12">
+                                <label for="email" class=" fw-bold">Email <span class="text-danger">*</span>
+                                </label>
+                                <input type="email" class="form-control mt-3" aria-label="Last name"
+                                    placeholder="Enter Your Email" id="email" required>
+                                <div class="invalid-feedback">
+                                    Please enter your email
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col-md-5">
+                                <label for="number" class=" fw-bold">Phone Number</label>
+                                <select class="form-select mt-3 form_content" id="number">
+                                    <option>Select A Country Code</option>
+                                    <option>+91</option>
+                                    <option>+92</option>
+                                    <option>+93</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-7">
+                                <label for="number control-label" class="fw-bold invisible">Phone Number</label>
+                                <input type="number" class="form-control col-md-7 mt-3"
+                                    placeholder="Enter your phone number" id="number">
+                                <div class="phone_content1 text-muted">
+                                    Please enter the phone number without plus sign ("+") and Country Code.
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="row mb-4">
+                            <div class="col-md-12">
+                                <label for="comapnyName" class=" fw-bold">Company Name</label>
+                                <input type="text" class="form-control mt-3" placeholder="Enter your company name"
+                                    id="comapnyName">
+                                <div class="invalid-feedback">
+                                    Please enter your city
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col-md-6">
+                                <label for="validationDefault04" class="form-label col-md-4 fw-bold p-0">Country<span
+                                        class="text-danger">*</span></label>
+                                <select class="form-select mt-3 form_content" id="validationDefault04" required>
+                                    <option selected disabled value="">Select A Country</option>
+                                    <option>Option1</option>
+                                    <option>Option2</option>
+                                    <option>Option3</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please Select Your Country
+                                </div>
+                            </div>
+      
+
+
+                            <div class='col-md-6'>
+                                <div class="form-group">
+                                    <label for="datetimepicker3" class="form-label col-md-8 fw-bold">Date and Time:<span
+                                        class="text-danger">*</span></label>
+                                    <div class='input-group date' id='datetimepicker3'>
+                                        
+    
+                                        <input type='text' class="form-control" placeholder="Select A Date and Time" required>
+                                        <span class="input-group-addon">
+                                            <span class="glyphicon glyphicon-time"></span>
+                                        </span>
+                                        
+                                    </div>
+                                    <div class="invalid-feedback">
+                                        Please Select Your Country
+                                    </div>
+                                </div>
+                               
+                            </div>
+                         
+                            <script type="text/javascript">
+                                $(function () {
+                                    $('#datetimepicker3').datetimepicker({
+                                        format: 'D-M-Y'
+                                    });
+                                });
+                             </script>
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="d-grid mb-4">
+                        <button class="btn newBgColor text-white" value="Sumbit" type="Submit">Submit</button>
+                    </div>
+
+
+                </form>
+
+
+            </div>
+        </div>
+    
+</section>
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+        <script>
+            (() => {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+        </script>
+        
+</body>
+
+</html>
